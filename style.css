@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+}
+
+.wrapper {
+    margin: 30px;
+}
+
+input.large-checkbox {
+    top: 6px;
+    width: 16px;
+    height: 16px;
+}
