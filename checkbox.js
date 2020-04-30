@@ -17,8 +17,8 @@ function checkboxSetStatus() {
 }
 
 $(document).ready(function() {
-    // if cookies exist disable all checkboxes
-    if (document.cookie.length > 0) {
+    // if "disable" cookie exists disable all checkboxes
+    if (getCookie('disable')) {
         $("input[type='checkbox']").each(function() {
             $(this).attr("disabled", true);
         });
@@ -48,6 +48,7 @@ $(document).ready(function() {
             $("input[type='checkbox']").each(function() {
                 $(this).attr("disabled", true);
             });
+            document.cookie = 'disable=true';
             $('.alert-success').fadeIn(600).delay(2000).fadeOut(1000);
         } else {
             $('.alert-primary').fadeIn(600).delay(2000).fadeOut(1000);
