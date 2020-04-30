@@ -9,13 +9,23 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size: 22px;
 }
+label {
+    font-size: 20px;
+}
 
 .wrapper {
     margin: 30px;
 }
 
 input.large-checkbox {
-    top: 6px;
-    width: 16px;
-    height: 16px;
+    margin: 6px;
+    width: 15px;
+    height: 15px;
+}
+
+.alert {
+    font-size: 18px;
+    margin: 30px;
+    max-width: 500px;
+    display: none;
 }
