@@ -48,7 +48,7 @@ $(document).ready(function() {
             $("input[type='checkbox']").each(function() {
                 $(this).attr("disabled", true);
             });
-            document.cookie = 'disable=true';
+            document.cookie = 'disable=true; max-age=36000';
             $('.alert-success').fadeIn(600).delay(2000).fadeOut(1000);
         } else {
             $('.alert-primary').fadeIn(600).delay(2000).fadeOut(1000);
